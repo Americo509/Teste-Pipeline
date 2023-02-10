@@ -9,7 +9,7 @@ pipeline {
         }
         stage('triggerTrunk') {
             steps {
-                build job: "Trunk Sigeps", wait: true
+                build job: "prServer", wait: true
             }
         }
     }
