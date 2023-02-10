@@ -7,14 +7,9 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
+        stage('triggerTrunk') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                build job: "Teste - Pipeline (Release)", wait: true
             }
         }
     }
