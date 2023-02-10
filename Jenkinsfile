@@ -9,7 +9,7 @@ pipeline {
         }
         stage('triggerTrunk') {
             steps {
-                build job: "Teste - Pipeline (Release)", wait: true
+                build job: "Trunk Sigeps", wait: true
             }
         }
     }
