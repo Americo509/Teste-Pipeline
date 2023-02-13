@@ -1,9 +1,11 @@
 pipeline {
-    agent any
+   agent any
 
-     stage('triggerTrunk') {
+     stages {
+        stage('triggerTrunk') {
             steps {
                 build job: "prServer", wait: true
+            }
         }
     }
 }
